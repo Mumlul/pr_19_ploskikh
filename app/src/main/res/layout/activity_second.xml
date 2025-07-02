@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите фигуру"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/figimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/log"/>
+    
+    <Spinner
+        android:id="@+id/fig"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="365dp"
+        android:entries="@array/items"
+        android:background="@drawable/ed"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/First"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/ed"
+        android:hint="Введите данные для расчета"
+        android:padding="10dp"
+        android:textColorHint="@color/hintcol"/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/Second"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/ed"
+        android:hint="Введите данные для расчета"
+        android:padding="10dp"
+        android:textColorHint="@color/hintcol"/>
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="550dp"
+        android:text="Выполнить расчет"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:onClick="ras"/>
+
+</FrameLayout>

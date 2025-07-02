@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Геометрический калькулятор"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"/>
+
+
+
+    <ImageView
+        android:id="@+id/figiraimg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        />
+    
+    <TextView
+        android:id="@+id/figiratxt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/ed"/>
+
+    <TextView
+        android:id="@+id/answ"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/ed"/>
+    
+    <Button
+        android:onClick="register"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="Регистрация"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="520dp"/>
+
+
+</FrameLayout>
